@@ -1,0 +1,25 @@
+env: simple_tag
+seed: 5
+featExtractor: !!python/name:__main__.NothingToDo  ''
+freqSave: 1000
+freqTest: 10
+nbTest: 1
+freqVerbose: 10
+freqOptim: 1                                                                          # Optimisation de la politique tous les freqOptim evenements
+fromFile: null
+nbEpisodes: 1000
+maxLengthTest: 100                                                                    # Longueur maxi des trajectoires en Test
+maxLengthTrain: 25  
+
+gamma: 0.95
+mem_size : 10000
+mbs : 100
+C : 10
+ActorLr : 0.01
+ValueLr : 0.001
+ActorLayers : [128]
+ValueLayers : [128]
+tau : 0.9
+mu : 0
+sigma : 0.2
+norm_rew : 1000
