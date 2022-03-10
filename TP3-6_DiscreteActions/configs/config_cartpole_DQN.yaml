@@ -1,0 +1,23 @@
+env: CartPole-v1                                                  # environnement
+seed: 5
+featExtractor: !!python/name:__main__.NothingToDo ''
+freqSave: 1000
+freqTest: 10
+nbTest: 1
+freqVerbose: 100
+freqOptim: 1                                                                          # Optimisation de la politique tous les freqOptim evenements
+fromFile: null
+nbEpisodes: 50000
+maxLengthTest: 500                                                                    # Longueur maxi des trajectoires en Test
+maxLengthTrain: 300  
+explo : 0.1
+decay : 0.9
+gamma: 0.9999
+target : True
+repay : True
+prior : True
+C : 10
+mem_size : 10000
+mbs : 100
+lr : 0.003
+QLayers : [200]
