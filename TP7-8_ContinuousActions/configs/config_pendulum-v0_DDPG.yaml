@@ -1,0 +1,25 @@
+env: Pendulum-v0                                                                   # environnement
+# map: gridworldPlans/plan1.txt                                                         # carte a charger
+seed: 5
+featExtractor: !!python/name:__main__.NothingToDo ''
+freqSave: 1000
+freqTest: 10
+nbTest: 1
+freqVerbose: 10
+freqOptim: 1                                                                          # Optimisation de la politique tous les freqOptim evenements
+fromFile: null
+nbEpisodes: 5000
+maxLengthTest: 500                                                                    # Longueur maxi des trajectoires en Test
+maxLengthTrain: 100  
+gamma: 0.95
+mem_size : 10000
+mbs : 100
+C : 10
+ActorLr : 0.001
+ValueLr : 0.003
+ActorLayers : [10, 10]
+ValueLayers : [10, 10]
+tau : 0.1
+mu : 0
+sigma : 0.2
+norm_rew : 1000

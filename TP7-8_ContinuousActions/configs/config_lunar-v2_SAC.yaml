@@ -1,0 +1,28 @@
+env: LunarLanderContinuous-v2
+seed: 5
+featExtractor: !!python/name:__main__.NothingToDo ''
+freqSave: 1000
+freqTest: 10
+nbTest: 1
+freqVerbose: 10
+freqOptim: 1                                                                          # Optimisation de la politique tous les freqOptim evenements
+fromFile: null
+nbEpisodes: 5000
+maxLengthTest: 500                                                                    # Longueur maxi des trajectoires en Test
+maxLengthTrain: 100  
+gamma: 0.9
+mem_size : 10000
+mbs : 100
+C : 10
+ActorLr : 0.001
+ValueLr : 0.003
+ActorLayers : [30, 30]
+QValueLayers1 : [30, 30]
+QValueLayers2 : [30, 30]
+alpha : 0.01
+tau : 0.1
+norm_rew : 1000
+
+alpha_init : 0.01
+target_entropy : 0.2
+lrAlpha : 0.001
